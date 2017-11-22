@@ -1,0 +1,14 @@
+yum
+yum install mod_wsgi httpd-devel python-ldap python-redis dejavu-sans-mono-fonts \
+clustershell python-flask Cython npm
+
+pyslurm
+git clone -b 17.02.0 https://github.com/PySlurm/pyslurm.git
+python setup.py build
+python setup.py install
+
+cython
+pip install cython==0.21
+
+SELinux
+/etc/sysconfig/selinux
